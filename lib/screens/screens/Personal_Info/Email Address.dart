@@ -33,11 +33,13 @@ class Email_Address extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CoustomText(
-                text: 'What’s Your Email Address?',
-                color: globalColors.titalColor,
-                fontsize: 26,
-                fontWeight: FontWeight.w500),
+            FittedBox(
+              child: CoustomText(
+                  text: 'What’s Your Email Address?',
+                  color: globalColors.titalColor,
+                  fontsize: 26,
+                  fontWeight: FontWeight.w500),
+            ),
             CoustomText(
                 text:
                     'Edit or change your Email Address to continue \nto Labor sense',

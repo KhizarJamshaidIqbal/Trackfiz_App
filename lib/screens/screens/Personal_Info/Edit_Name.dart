@@ -32,11 +32,13 @@ class Edit_Name extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CoustomText(
-                text: 'What’s Your Name?',
-                color: globalColors.titalColor,
-                fontsize: 26,
-                fontWeight: FontWeight.w500),
+            FittedBox(
+              child: CoustomText(
+                  text: 'What’s Your Name?',
+                  color: globalColors.titalColor,
+                  fontsize: 26,
+                  fontWeight: FontWeight.w500),
+            ),
             CoustomText(
                 text:
                     'Edit or change your full name to continue \nto Labor sense',
