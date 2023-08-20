@@ -66,9 +66,7 @@ class CustomBackArrow extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       icon: Icon(Icons.arrow_back, color: Color(0xff141B1F), size: 28),
-      onPressed: () {
-        // Handle back button press
-      },
+      onPressed: onpress,
     );
   }
 }
@@ -216,6 +214,44 @@ class _CustomPasswordInputFieldState extends State<CustomPasswordInputField> {
                   color: Color(0xff2B2C43),
                 ),
               ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+//CoustomTextInputField
+
+class CoustomTextInputField extends StatefulWidget {
+  final TextEditingController controller;
+
+  CoustomTextInputField({
+    required this.controller,
+  });
+
+  @override
+  _CoustomTextInputFieldState createState() => _CoustomTextInputFieldState();
+}
+
+class _CoustomTextInputFieldState extends State<CoustomTextInputField> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Color(0xffEEF0F1),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      child: SizedBox(
+        width: MediaQuery.of(context).size.width * 0.9,
+        height: MediaQuery.of(context).size.height * 0.083,
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: TextField(
+            controller: widget.controller,
+            decoration: InputDecoration(
+              border: InputBorder.none,
             ),
           ),
         ),
