@@ -77,7 +77,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   children: [
                     CustomBackArrow(onpress: _goBack),
                     const Spacer(),
-                    CustomLinearProgressIndicator(
+                    CoustomLinearProgressIndicator(
                       value: progressValue,
                     ),
                     const Spacer(),

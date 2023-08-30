@@ -3,10 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:trackfiz_app/Utils/colors.dart';
-import 'package:trackfiz_app/screens/screens/Login_screen/Sign_In_phone%20number.dart';
-import 'package:trackfiz_app/screens/screens/Registration_Screen/Sign_Up_phone_number.dart';
 import '../../../model/onboardingscreen_components.dart';
-import '../Registration_Screen/Signup.dart';
+import '../Login_screen/Sign_In_phone number.dart';
+import '../Registration_Screen/Sign_Up_phone_number.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});

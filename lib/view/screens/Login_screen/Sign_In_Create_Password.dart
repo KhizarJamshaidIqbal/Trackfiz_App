@@ -1,25 +1,33 @@
-// ignore_for_file: camel_case_types, file_names, unused_element, prefer_const_constructors, unused_local_variable, no_leading_underscores_for_local_identifiers, non_constant_identifier_names, prefer_const_literals_to_create_immutables
+// ignore_for_file: camel_case_types, file_names, unused_local_variable, non_constant_identifier_names, prefer_const_constructors, unused_element, no_leading_underscores_for_local_identifiers
 
 import 'package:flutter/material.dart';
 import 'package:trackfiz_app/Utils/colors.dart';
-import 'package:trackfiz_app/screens/screens/on_boarding_screen/on_boarding_Screen.dart';
 import '../../../Utils/widgets.dart';
-import '../Registration_Screen/Sign_Up_phone_number.dart';
-import 'Sign_In_Create_Password.dart';
+import '../Forget&Reset Password/Forgot_password_phone_number.dart';
+import '../Welcome_screen/WelcomeScreen.dart';
+import 'Sign_In_phone number.dart';
 
-class Sign_In_phone_number extends StatefulWidget {
-  const Sign_In_phone_number({super.key});
+class Sign_In_Create_Password extends StatefulWidget {
+  const Sign_In_Create_Password({super.key});
 
   @override
-  State<Sign_In_phone_number> createState() => _Sign_In_phone_numberState();
+  State<Sign_In_Create_Password> createState() =>
+      _Sign_In_Create_PasswordState();
 }
 
-class _Sign_In_phone_numberState extends State<Sign_In_phone_number> {
+class _Sign_In_Create_PasswordState extends State<Sign_In_Create_Password> {
   @override
   Widget build(BuildContext context) {
-    double progressValue = 0.5;
+    final TextEditingController PasswordController = TextEditingController();
+    double progressValue = 1.0;
 
-    TextEditingController phoneNumberController = TextEditingController();
+    void _goBack() {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Sign_In_phone_number(),
+          ));
+    }
 
     return Scaffold(
       backgroundColor: Color(0xffFFFFFF),
@@ -27,19 +35,13 @@ class _Sign_In_phone_numberState extends State<Sign_In_phone_number> {
         elevation: 0.0,
         backgroundColor: Color(0xffFFFFFF),
         leading: CustomBackArrow(
-          onpress: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => OnboardingScreen(),
-                ));
-          },
+          onpress: _goBack,
         ),
         centerTitle: true,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomLinearProgressIndicator(
+            CoustomLinearProgressIndicator(
               value: progressValue,
             )
           ],
@@ -51,26 +53,26 @@ class _Sign_In_phone_numberState extends State<Sign_In_phone_number> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CoustomText(
-                text: 'Enter Your Phone\nNumber',
+                text: 'Enter Your Password',
                 fontsize: 26,
                 color: globalColors.titalColor,
                 fontWeight: FontWeight.bold),
             SizedBox(height: MediaQuery.of(context).size.height * 0.01),
             CoustomText(
-                text: 'Enter your Phone number to continue to Labor sense',
+                text: 'Enter your password to continue to labor \nsense',
                 fontsize: 14,
                 color: globalColors.descriptionColor,
                 fontWeight: FontWeight.normal),
             SizedBox(height: MediaQuery.of(context).size.height * 0.085),
-            CustomPhoneNumberInputField(
-              controller: phoneNumberController,
-            ),
+            CustomPasswordInputField(
+                controller: PasswordController,
+                hintText: 'Enter your password'),
             SizedBox(height: MediaQuery.of(context).size.height * 0.02),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CoustomText(
-                    text: 'Didn’t have an account? ',
+                    text: 'Forget your password? ',
                     fontsize: 14,
                     color: globalColors.titalColor,
                     fontWeight: FontWeight.normal),
@@ -79,11 +81,11 @@ class _Sign_In_phone_numberState extends State<Sign_In_phone_number> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Sign_Up_phone_number(),
+                          builder: (context) => Forgot_password_phone_number(),
                         ));
                   },
                   child: CoustomText(
-                      text: ' Sign up here ',
+                      text: ' Reset Password ',
                       fontsize: 14,
                       color: globalColors.primaryColor,
                       fontWeight: FontWeight.normal),
@@ -96,7 +98,7 @@ class _Sign_In_phone_numberState extends State<Sign_In_phone_number> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Sign_In_Create_Password(),
+                        builder: (context) => WelcomeScreen(),
                       ));
                 },
                 text: 'Continue'),

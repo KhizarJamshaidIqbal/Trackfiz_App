@@ -42,7 +42,7 @@ class _Forgot_password_phone_numberState
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomLinearProgressIndicator(
+            CoustomLinearProgressIndicator(
               value: progressValue,
             )
           ],

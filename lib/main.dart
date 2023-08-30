@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unused_local_variable
 
 import 'package:flutter/material.dart';
-import 'screens/screens/Personal_Info/Personal_Info.dart';
+import 'view/screens/Add_project_Screens/add_address.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Trackfiz_APP',
       debugShowCheckedModeBanner: false,
-      home: Personal_Info(),
+      home: add_address(),
     );
   }
 }

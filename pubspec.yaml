@@ -43,6 +43,11 @@ dependencies:
   intl_phone_number_input: ^0.7.3+1
   intl_phone_field: ^3.2.0
   pinput: ^3.0.0
+  pretty_qr_code: ^2.0.3
+  share: ^2.0.4
+  qr_flutter: ^4.1.0
+  google_maps_flutter: ^2.4.0
+  google_maps_webservice:
 
 dev_dependencies:
   flutter_test:

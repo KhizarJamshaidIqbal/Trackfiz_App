@@ -25,7 +25,7 @@ class Sign_Up_verify_phone_number extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomLinearProgressIndicator(
+            CoustomLinearProgressIndicator(
               value: progressValue,
             )
           ],

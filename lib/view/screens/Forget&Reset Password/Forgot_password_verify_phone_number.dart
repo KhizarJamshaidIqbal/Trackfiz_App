@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:trackfiz_app/Utils/colors.dart';
 
 import '../../../Utils/widgets.dart';
-import '../Login_screen/Sign_In_phone number.dart';
 import 'Forgot_password_Create_new_Password.dart';
 
 class Forgot_password_verify_phone_number extends StatefulWidget {
@@ -33,7 +32,7 @@ class _Forgot_password_verify_phone_numberState
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomLinearProgressIndicator(
+            CoustomLinearProgressIndicator(
               value: progressValue,
             )
           ],

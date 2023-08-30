@@ -61,7 +61,7 @@ class _CustomPhoneNumberInputFieldState
 class CustomBackArrow extends StatelessWidget {
   final VoidCallback onpress;
 
-  const CustomBackArrow({super.key, required this.onpress});
+  const CustomBackArrow({super.key, required this.onpress, });
   @override
   Widget build(BuildContext context) {
     return IconButton(
@@ -137,10 +137,10 @@ class CoustomButton extends StatelessWidget {
 
 //CustomLinearProgressIndicator
 
-class CustomLinearProgressIndicator extends StatelessWidget {
+class CoustomLinearProgressIndicator extends StatelessWidget {
   final double value;
 
-  CustomLinearProgressIndicator({required this.value});
+  CoustomLinearProgressIndicator({required this.value});
 
   @override
   Widget build(BuildContext context) {

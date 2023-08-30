@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:trackfiz_app/Utils/colors.dart';
-import 'package:trackfiz_app/screens/screens/Welcome_screen/WelcomeScreen.dart';
-
 import '../../../Utils/widgets.dart';
 import '../Login_screen/Sign_In_phone number.dart';
 
@@ -35,7 +33,7 @@ class _Forgot_password_Create_new_PasswordState
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomLinearProgressIndicator(
+            CoustomLinearProgressIndicator(
               value: progressValue,
             )
           ],

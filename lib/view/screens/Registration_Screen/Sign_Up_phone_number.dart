@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:trackfiz_app/Utils/colors.dart';
-import 'package:trackfiz_app/screens/screens/Login_screen/Sign_In_phone%20number.dart';
-import 'package:trackfiz_app/screens/screens/Registration_Screen/Sign_Up_verify_phone_number.dart';
 import '../../../Utils/widgets.dart';
+import '../Login_screen/Sign_In_phone number.dart';
+import 'Sign_Up_verify_phone_number.dart';
 
 class Sign_Up_phone_number extends StatefulWidget {
   const Sign_Up_phone_number({super.key});
@@ -32,7 +32,7 @@ class _Sign_Up_phone_numberState extends State<Sign_Up_phone_number> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomLinearProgressIndicator(
+            CoustomLinearProgressIndicator(
               value: progressValue,
             )
           ],

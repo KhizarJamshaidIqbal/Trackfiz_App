@@ -1,10 +1,10 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, sized_box_for_whitespace, file_names
 
 import 'package:flutter/material.dart';
-import 'package:trackfiz_app/Utils/colors.dart';
-
 import '../../../Utils/widgets.dart';
 import '../Profile/Profile.dart';
+import 'Company_Qr_Code.dart';
+import 'Edit_CompanyName.dart';
 
 class Company_Info extends StatelessWidget {
   const Company_Info({super.key});
@@ -56,11 +56,11 @@ class Company_Info extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => Edit_Name(),
-                    //     ));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Edit_CompanyName(),
+                        ));
                   },
                   child: SizedBox(
                       width: 20,
@@ -107,11 +107,11 @@ class Company_Info extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => Phone_Number(),
-                    //     ));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => QrCode(),
+                        ));
                   },
                   child: SizedBox(
                       width: 20,

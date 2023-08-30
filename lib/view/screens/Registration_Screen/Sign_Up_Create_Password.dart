@@ -2,9 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:trackfiz_app/Utils/colors.dart';
-import 'package:trackfiz_app/screens/screens/Welcome_screen/WelcomeScreen.dart';
-
 import '../../../Utils/widgets.dart';
+import '../Welcome_screen/WelcomeScreen.dart';
 
 class Sign_Up_Create_Password extends StatefulWidget {
   const Sign_Up_Create_Password({super.key});
@@ -33,7 +32,7 @@ class _Sign_Up_Create_PasswordState extends State<Sign_Up_Create_Password> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CustomLinearProgressIndicator(
+            CoustomLinearProgressIndicator(
               value: progressValue,
             )
           ],
