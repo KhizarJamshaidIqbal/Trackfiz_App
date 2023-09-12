@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, library_private_types_in_public_api, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, library_private_types_in_public_api, sized_box_for_whitespace, prefer_const_literals_to_create_immutables,
 
 import 'package:flutter/material.dart';
 
@@ -149,7 +149,7 @@ class _AddProjectState extends State<AddProject> {
                               style: TextStyle(
                                 color: Color(0xff08111B),
                                 fontSize: 15,
-                                fontWeight: FontWeight.normal,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             Text(
@@ -183,6 +183,17 @@ class _AddProjectState extends State<AddProject> {
                 },
               ),
             ),
+            Stack(
+              clipBehavior: Clip.none,
+              children: [
+                Positioned(
+                    bottom: 25.0,
+                    child: CoustomButton(onPressed: () {}, text: 'Continue')),
+                SizedBox(
+                  height: 25.0,
+                )
+              ],
+            )
           ],
         ),
       ),

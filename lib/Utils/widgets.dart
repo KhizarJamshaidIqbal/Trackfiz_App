@@ -1,4 +1,4 @@
-// ignore_for_file: unused_field, use_key_in_widget_constructors, prefer_const_constructors, prefer_const_constructors_in_immutables, library_private_types_in_public_api, prefer_final_fields, camel_case_types, non_constant_identifier_names, prefer_const_literals_to_create_immutables, sort_child_properties_last, unnecessary_new
+// ignore_for_file: unused_field, use_key_in_widget_constructors, prefer_const_constructors, prefer_const_constructors_in_immutables, library_private_types_in_public_api, prefer_final_fields, camel_case_types, non_constant_identifier_names, prefer_const_literals_to_create_immutables, sort_child_properties_last, unnecessary_new, avoid_print
 
 import 'package:flutter/material.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';

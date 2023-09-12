@@ -3,7 +3,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../Login_screen/Sign_In_phone number.dart';
 import '../on_boarding_screen/on_boarding_Screen.dart';
 
 class SplashScreen extends StatefulWidget {

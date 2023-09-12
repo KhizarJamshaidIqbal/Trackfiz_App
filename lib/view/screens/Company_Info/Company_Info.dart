@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import '../../../Utils/widgets.dart';
 import '../Profile/Profile.dart';
-import 'Company_Qr_Code.dart';
 import 'Edit_CompanyName.dart';
+import 'Select_Pay_period.dart';
 
 class Company_Info extends StatelessWidget {
   const Company_Info({super.key});
@@ -82,45 +82,6 @@ class Company_Info extends StatelessWidget {
           SizedBox(
             height: 8,
           ),
-          //Company QR Code
-          Container(
-            width: MediaQuery.of(context).size.width * .9,
-            height: MediaQuery.of(context).size.height * .09,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    CoustomText(
-                        text: "Company QR Code",
-                        color: Color(0xff08111B),
-                        fontsize: 15,
-                        fontWeight: FontWeight.bold),
-                    CoustomText(
-                        text: "Use this code to add new employee",
-                        color: Color(0xff979797),
-                        fontsize: 13,
-                        fontWeight: FontWeight.normal),
-                  ],
-                ),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => QrCode(),
-                        ));
-                  },
-                  child: SizedBox(
-                      width: 20,
-                      height: 20,
-                      child: Image.asset('assets/images/qr_code.png')),
-                ),
-              ],
-            ),
-          ),
           Container(
             width: MediaQuery.of(context).size.width * 1,
             decoration: BoxDecoration(
@@ -158,11 +119,11 @@ class Company_Info extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => Personal_Info(),
-                    //     ));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Select_Pay_Period(),
+                        ));
                   },
                   child: Icon(Icons.arrow_forward_ios,
                       color: Color(0xff08111B), size: 20),
@@ -205,11 +166,11 @@ class Company_Info extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    // Navigator.push(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //       builder: (context) => Personal_Info(),
-                    //     ));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Select_Pay_Period(),
+                        ));
                   },
                   child: Icon(Icons.arrow_forward_ios,
                       color: Color(0xff08111B), size: 20),

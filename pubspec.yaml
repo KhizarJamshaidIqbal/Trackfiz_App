@@ -47,7 +47,14 @@ dependencies:
   share: ^2.0.4
   qr_flutter: ^4.1.0
   google_maps_flutter: ^2.4.0
+  # flutter_geocoder:
+  geolocator:
+  image:
   google_maps_webservice:
+  geocoding:
+  http:
+  uuid:
+  custom_check_box: ^0.0.4
 
 dev_dependencies:
   flutter_test:
