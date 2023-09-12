@@ -173,7 +173,6 @@ class _AddAddressState extends State<AddAddress> {
             child: SizedBox(
               height: MediaQuery.of(context).size.height * 1,
               child: GoogleMap(
-                // markers: _markers,
                 markers: Set<Marker>.of(_markers),
                 mapType: MapType.terrain,
                 onMapCreated: _onMapCreated,
@@ -184,7 +183,7 @@ class _AddAddressState extends State<AddAddress> {
           Positioned(
             top: MediaQuery.of(context).size.height * .66,
             child: Container(
-              height: 200,
+              height: 220,
               width: MediaQuery.of(context).size.width * 1,
               decoration: BoxDecoration(
                 color: Colors.white,
