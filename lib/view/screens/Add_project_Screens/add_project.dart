@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../Utils/widgets.dart';
+import '../Add_Role_or_group/Employees.dart';
 
 class AddProject extends StatefulWidget {
   const AddProject({Key? key}) : super(key: key);
@@ -130,8 +131,10 @@ class _AddProjectState extends State<AddProject> {
                       ],
                     ),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
+                        SizedBox(
+                          width: 10.0,
+                        ),
                         ClipRRect(
                           borderRadius: BorderRadius.all(Radius.circular(10)),
                           child: SizedBox(
@@ -140,10 +143,13 @@ class _AddProjectState extends State<AddProject> {
                               child:
                                   Image.asset('assets/images/mainprofile.png')),
                         ),
+                        SizedBox(
+                          width: 15.0,
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
+                          children: const [
                             Text(
                               'Justin Gathege',
                               style: TextStyle(
@@ -162,20 +168,23 @@ class _AddProjectState extends State<AddProject> {
                             ),
                           ],
                         ),
+                        Spacer(),
                         Transform.scale(
                           scale: 1.3,
                           child: Checkbox(
-                            value: isCheckedList[index], // Use the state list
+                            value: isCheckedList[index],
                             onChanged: (bool? value) {
                               setState(() {
-                                isCheckedList[index] =
-                                    value ?? false; // Update checkbox state
+                                isCheckedList[index] = value ?? false;
                               });
                             },
                             activeColor: isCheckedList[index]
                                 ? Color(0xFF0F509D)
-                                : Colors.blue, // Change color when selected
+                                : Colors.blue,
                           ),
+                        ),
+                        SizedBox(
+                          width: 10.0,
                         ),
                       ],
                     ),
@@ -183,16 +192,17 @@ class _AddProjectState extends State<AddProject> {
                 },
               ),
             ),
-            Stack(
-              clipBehavior: Clip.none,
-              children: [
-                Positioned(
-                    bottom: 25.0,
-                    child: CoustomButton(onPressed: () {}, text: 'Continue')),
-                SizedBox(
-                  height: 25.0,
-                )
-              ],
+            CoustomButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Employees(),
+                      ));
+                },
+                text: 'Continue'),
+            SizedBox(
+              height: 20.0,
             )
           ],
         ),

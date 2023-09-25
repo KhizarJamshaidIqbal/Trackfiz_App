@@ -49,7 +49,7 @@ class Email_Address extends StatelessWidget {
             SizedBox(
               height: 30.0,
             ),
-            CoustomTextInputField(
+            CoustomTextInputField(hintText: '',
               controller: EmailController,
             ),
             Spacer(),

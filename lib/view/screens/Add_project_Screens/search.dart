@@ -162,7 +162,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   ),
                   subtitle: CoustomText(
                     text: _placesList[index]['structured_formatting']
-                        ['main_text'],
+                        ['secondary_text'],
                     color: Color(0xff979797),
                     fontsize: 14,
                     fontWeight: FontWeight.normal,

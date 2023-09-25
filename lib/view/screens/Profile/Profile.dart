@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:trackfiz_app/Utils/colors.dart';
 import 'package:trackfiz_app/Utils/widgets.dart';
 
+import '../Clock_Setting/Clock_in_Setting.dart';
 import '../Company_Info/Company_Info.dart';
 import '../Personal_Info/Personal_Info.dart';
 
@@ -161,7 +162,7 @@ class Profile extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Personal_Info(),
+                          builder: (context) => ClockInSetting(),
                         ));
                   },
                   child: Icon(Icons.arrow_forward_ios,

@@ -48,7 +48,7 @@ class Phone_Number extends StatelessWidget {
             SizedBox(
               height: 30.0,
             ),
-            CoustomTextInputField(
+            CoustomTextInputField(hintText: '',
               controller: PhoneNumberController,
             ),
             Spacer(),

@@ -44,7 +44,7 @@ class Edit_CompanyName extends StatelessWidget {
             SizedBox(
               height: 30.0,
             ),
-            CoustomTextInputField(
+            CoustomTextInputField(hintText: '',
               controller: NameController,
             ),
             Spacer(),

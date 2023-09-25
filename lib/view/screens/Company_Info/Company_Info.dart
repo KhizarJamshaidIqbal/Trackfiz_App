@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import '../../../Utils/widgets.dart';
 import '../Profile/Profile.dart';
+import 'Choose_Industry.dart';
 import 'Edit_CompanyName.dart';
 import 'Select_Pay_period.dart';
 
@@ -122,7 +123,7 @@ class Company_Info extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Select_Pay_Period(),
+                          builder: (context) => ChooseIndustry(),
                         ));
                   },
                   child: Icon(Icons.arrow_forward_ios,

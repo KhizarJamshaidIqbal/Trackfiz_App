@@ -3,6 +3,7 @@
 import 'dart:async';
 import 'dart:ui' as ui;
 import 'dart:typed_data';
+import 'package:location/location.dart' as loc;
 import 'package:flutter/services.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
@@ -25,6 +26,7 @@ class _AddAddressState extends State<AddAddress> {
   Location? selectedLocation;
   Set<Marker> _markers = {};
   late BitmapDescriptor customMarkerIcon;
+  bool _permissionDenied = false;
 
   //initState
   @override
@@ -32,8 +34,7 @@ class _AddAddressState extends State<AddAddress> {
     super.initState();
     loadCustomMarker();
   }
-
-  // Load custom marker icon
+    // Load custom marker icon 
   void loadCustomMarker() async {
     final Uint8List markerIcon =
         await loadAsset('assets/images/markerIcon.png', 100);
@@ -62,7 +63,7 @@ class _AddAddressState extends State<AddAddress> {
 
   // Initial camera position
   CameraPosition _initialCameraPosition = CameraPosition(
-    target: LatLng(32.50665094382158, 74.50922452698633),
+    target: LatLng(32.50665094382145, 74.50922452698633),
     zoom: 14.0,
   );
 

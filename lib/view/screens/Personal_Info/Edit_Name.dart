@@ -48,7 +48,7 @@ class Edit_Name extends StatelessWidget {
             SizedBox(
               height: 30.0,
             ),
-            CoustomTextInputField(
+            CoustomTextInputField(hintText: '',
               controller: NameController,
             ),
             Spacer(),

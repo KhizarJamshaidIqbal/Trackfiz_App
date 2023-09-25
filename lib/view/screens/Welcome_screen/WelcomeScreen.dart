@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:trackfiz_app/Utils/colors.dart';
 import 'package:trackfiz_app/Utils/widgets.dart';
+import '../Add_project_Screens/add_address.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -37,7 +38,13 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
             Spacer(),
-            CoustomButton(onPressed: () {}, text: "Continue"),
+            CoustomButton(onPressed: () {
+              Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => AddAddress(),
+                      ));
+            }, text: "Continue"),
             SizedBox(
               height: 30.0,
             )
