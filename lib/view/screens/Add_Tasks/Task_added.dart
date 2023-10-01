@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:trackfiz_app/Utils/colors.dart';
-import 'package:trackfiz_app/view/screens/Add_Tasks/Add_Tasks.dart';
-
 import '../../../Utils/widgets.dart';
 import '../Profile/Profile.dart';
 import 'Task_details.dart';

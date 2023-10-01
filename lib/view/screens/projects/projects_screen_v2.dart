@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, depend_on_referenced_packages, library_private_types_in_public_api
+// ignore_for_file: prefer_const_constructors, depend_on_referenced_packages, library_private_types_in_public_api, no_leading_underscores_for_local_identifiers, sized_box_for_whitespace, unnecessary_string_interpolations
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -131,7 +131,7 @@ class _ProjectScreenV2State extends State<ProjectScreenV2> {
           // You can add logic here to filter projects based on the selected category
         },
         style: ElevatedButton.styleFrom(
-          primary: _selectedCategory == category
+          backgroundColor: _selectedCategory == category
               ? AppColors.appColor // Set the selected button color here
               : Colors.white, // Set the unselected button color here
           shape: RoundedRectangleBorder(

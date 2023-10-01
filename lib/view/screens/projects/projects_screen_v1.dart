@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, depend_on_referenced_packages, unused_import, library_private_types_in_public_api
+// ignore_for_file: prefer_const_constructors, depend_on_referenced_packages, unused_import, library_private_types_in_public_api, deprecated_member_use, sized_box_for_whitespace, no_leading_underscores_for_local_identifiers, unnecessary_string_interpolations
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -32,7 +32,7 @@ class _ProjectScreenV1State extends State<ProjectScreenV1> {
         elevation: 0.0,
         leading: IconButton(
           onPressed: () {
-            // Handle action icon tap
+            Navigator.pop(context);
           },
           icon: SizedBox(
             height: 32,
@@ -44,9 +44,7 @@ class _ProjectScreenV1State extends State<ProjectScreenV1> {
         ),
         actions: [
           IconButton(
-            onPressed: () {
-              // Handle action icon tap
-            },
+            onPressed: () {},
             icon: SizedBox(
               height: 32,
               width: 32,
@@ -94,8 +92,7 @@ class _ProjectScreenV1State extends State<ProjectScreenV1> {
                     child: Card(
                       child: IconButton(
                         onPressed: () {
-                          _showFilterBottomSheet(
-                              context); // Show the bottom sheet for filters
+                          _showFilterBottomSheet(context);
                         },
                         icon: SvgPicture.asset('assets/Filter.svg'),
                       ),

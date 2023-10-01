@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:trackfiz_app/view/screens/account_setup/your_email_screen.dart';
 import '../widgets/customPhoneInput.dart';
 import '../widgets/custom_appbar_with_loading.dart';
-import '../widgets/rounded_button.dart';
 
 class YourNameScreen extends StatelessWidget {
   const YourNameScreen({super.key});

@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unused_local_variable
 
 import 'package:flutter/material.dart';
-import 'Utils/bottom_navigation.dart';
+import 'package:trackfiz_app/view/screens/launch_screen/launch_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +15,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Trackfiz_APP',
         debugShowCheckedModeBanner: false,
-        home: CustomBottomNavigationBar()
-        );
-        
+        home: SplashScreen());
   }
 }

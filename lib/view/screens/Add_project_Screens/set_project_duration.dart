@@ -1,4 +1,4 @@
-// ignore_for_file: depend_on_referenced_packages, library_private_types_in_public_api, unused_element
+// ignore_for_file: depend_on_referenced_packages, library_private_types_in_public_api, unused_element, unnecessary_string_interpolations
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';

@@ -1,7 +1,5 @@
-// ignore_for_file: prefer_const_constructors, library_private_types_in_public_api, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, prefer_const_literals_to_create_immutables
-
+// ignore_for_file: prefer_const_constructors, library_private_types_in_public_api, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, prefer_const_literals_to_create_immutables, duplicate_ignore
 import 'package:flutter/material.dart';
-
 import '../../../Utils/bottom_navigation.dart';
 import '../../../Utils/widgets.dart';
 import '../widgets/custom_appbar_with_loading.dart';
